@@ -21,6 +21,7 @@ public class ConsultarOrdenStepDefs {
 
     @Then("el código de respuesta sera {int}")
     public void elCódigoDeRespuestaSera(int statusCode) {
-        restAssuredThat(response -> response.statusCode(statusCode));
+        orden1.validarCodigo(statusCode);
+
     }
 }

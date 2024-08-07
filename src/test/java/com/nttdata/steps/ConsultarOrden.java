@@ -20,4 +20,8 @@ public class ConsultarOrden {
     public void validarCodigoRespuesta(int statusCode) {
         restAssuredThat(response -> response.statusCode(statusCode));
     }
+
+    public void validarCodigo(int statusCode) {
+        restAssuredThat(response -> response.statusCode(statusCode));
+    }
 }
